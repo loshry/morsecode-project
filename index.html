@@ -7,6 +7,21 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    
+    <header>Morse Code Converter</header>
+    <form class="convert">
+        <div class = "convert__text">
+            <label for="convert__text__english">Text in English</label>
+            <input type="text" class="convert__text__english">
+        </div>
+        <div class="convert__morse">
+        <label for="convert__morse__code">Morse Code</label>
+        <input type= "text" class=convert__morse__code"">
+    </div>
+    <div class="button">
+        <button type= "submit" class="button__convert-morse">Convert to Morse Code</button>
+        <button type="submit" class="button__convert-text">Convert to English</button>
+    </div>
+    </form>
+    <script type="module" src = "./index.js"></script>
 </body>
 </html>

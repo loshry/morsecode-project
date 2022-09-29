@@ -1,2 +1,5 @@
-// build morse code translator english > morse
-// have a box to input language to translate to morse code
+import {translateToMorseCode} from "./functions.js";
+
+
+translateToMorseCode("My name is Leah");
+console.log(translateToMorseCode("My name is Leah"));
