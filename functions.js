@@ -65,21 +65,24 @@ export const translateToEnglish = (codeToConvert) => {
     const codeArr = codeToConvert.split(" ");
     // const keyArr = Object.keys(morseCodeTranslation);
     const valueArr = Object.values(morseCodeTranslation);
-    console.log(valueArr);
+
 
     let convertedCode = "";
     for (let i = 0;  i < codeArr.length; i++) {
-        console.log(codeToConvert.length);
+        
               const morseToConvert = codeArr[i];
-              console.log(codeArr[i]);
+              
               if(valueArr.includes(morseToConvert)) {
                let englishCharacter = Object.keys(morseCodeTranslation).find(key => morseCodeTranslation[key] === morseToConvert);
                 convertedCode += englishCharacter;
               }
+              else {
+                throw new Error ("Error");
+              }
               
    
     }
-    console.log(convertedCode);
+    
     return convertedCode.trimEnd();
 
 };

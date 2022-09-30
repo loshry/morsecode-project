@@ -10,8 +10,6 @@
   body {
     margin: 20px;
     padding: 20px;
-    width: 25%;
-    height: 50%;
     border: 2px solid darkorange;
   }
   header {
@@ -20,13 +18,6 @@
     color: lightblue;
     font-style: italic;
     font-size: 30px;
-  }
-  .convert {
-    box-sizing: border-box;
-    padding: 20px;
-    width: 25%;
-    height: 50%;
-    border: 2px solid lightsalmon;
   }
   .inputs {
     display: flex;
