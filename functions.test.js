@@ -1,4 +1,4 @@
-import {translateToMorseCode} from "./index.js";
+import {translateToMorseCode, translateToEnglish} from "./functions.js";
 import {it, expect} from "@jest/globals";
 
 it("Translate Sam to Morse Code", () => {
@@ -6,4 +6,7 @@ const result = translateToMorseCode("Sam");
 expect(result).toBe("... .- --");
 });
 
-it("Translate Sam J")
+it("Translate .... . .-.. .-.. --- from Morse Code", ()=> {
+    const result = translateToEnglish(".... . .-.. .-.. ---");
+    expect(result).toBe("HELLO");
+});
