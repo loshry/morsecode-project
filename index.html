@@ -1,28 +1,34 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Morse Code Translator</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
     <header>Morse Code Converter</header>
     <form class="convert">
-        <div class = "convert__text">
-            <label for="convert__text__english">Text in English</label>
-            <input type="text" class="convert__text__english">
+      <div class="inputs">
+        <div class="inputs__text">
+          <label for="convert__text__english">Text in English</label>
+          <input type="text" class="convert__text__english" />
         </div>
-        <div class="convert__morse">
-        <label for="convert__morse__code">Morse Code</label>
-        <input type= "text" class="convert__morse__code">
-    </div>
-    <div class="button">
-        <button type= "submit" class="button__convert-morse">Convert to Morse Code</button>
-        <button type="submit" class="button__convert-text">Convert to English</button>
+        <div class="inputs__morse">
+          <label for="convert__morse__code">Morse Code</label>
+          <input type="text" class="convert__morse__code" />
+        </div>
+      </div>
+      <div class="button">
+        <button type="submit" class="button__convert-morse">
+          Convert to Morse Code
+        </button>
+        <button type="submit" class="button__convert-text">
+          Convert to English
+        </button>
         <button type="submit" class="button__clear">Clear Boxes</button>
-    </div>
+      </div>
     </form>
-    <script type="module" src = "./index.js"></script>
-</body>
+    <script type="module" src="./index.js"></script>
+  </body>
 </html>

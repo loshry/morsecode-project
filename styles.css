@@ -1,14 +1,15 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: darkblue;
 }
 
 @media screen and (min-width: 350px) {
   body {
-    margin: 50px 50px;
-    padding: 100px;
+    margin: 20px;
+    padding: 20px;
     border: 2px solid darkorange;
   }
   header {
@@ -16,15 +17,20 @@
     justify-content: center;
     color: lightblue;
     font-style: italic;
+    font-size: 30px;
   }
-  form {
+  .inputs {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
     margin: 20px;
+    padding: 5px;
   }
   .button {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
   .button__convert-morse {
     margin: 20px;
