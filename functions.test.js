@@ -10,3 +10,4 @@ it("Translate .... . .-.. .-.. --- from Morse Code", ()=> {
     const result = translateToEnglish(".... . .-.. .-.. ---");
     expect(result).toBe("HELLO");
 });
+
